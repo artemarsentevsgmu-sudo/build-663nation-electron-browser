@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-theme="midnight">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070b" />
+    <meta name="description" content="663Nation — a private, frameless desktop browser." />
+    <title>663Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+      html,body{margin:0;background:#05070b;height:100%;overflow:hidden}
+      #boot{position:fixed;inset:0;display:flex;flex-direction:column;gap:18px;align-items:center;justify-content:center;background:#05070b;z-index:9999;transition:opacity .5s}
+      #boot .hex{width:64px;height:64px;animation:bootpulse 1.6s ease-in-out infinite}
+      #boot p{font:500 11px/1 Inter,system-ui,sans-serif;letter-spacing:.42em;color:#5b6678;text-transform:uppercase;margin:0}
+      @keyframes bootpulse{0%,100%{opacity:.45;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot">
+      <svg class="hex" viewBox="0 0 64 64" fill="none"><path d="M32 3 58 17.5v29L32 61 6 46.5v-29L32 3Z" stroke="#00e5a0" stroke-width="2.5"/><text x="32" y="38" text-anchor="middle" font-family="Inter,system-ui" font-weight="900" font-size="17" fill="#00e5a0">663</text></svg>
+      <p>663Nation</p>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

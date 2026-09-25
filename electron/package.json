@@ -1,0 +1,19 @@
+{
+  "name": "663nation-desktop",
+  "productName": "663Nation",
+  "version": "1.0.4",
+  "description": "663Nation — frameless, privacy-first desktop browser (Electron 28)",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  }
+}

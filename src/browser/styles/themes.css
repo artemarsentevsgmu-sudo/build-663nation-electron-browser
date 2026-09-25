@@ -1,0 +1,107 @@
+/* ─────────────────────────────────────────────────────────────
+   663Nation — themes.css
+   Every color in the app flows through these CSS variables.
+   Switch via [data-theme] and [data-accent] on the root .window.
+   ───────────────────────────────────────────────────────────── */
+
+.window,
+.veil-root {
+  /* accents */
+  --acc-green: #00e5a0;
+  --acc-cyan: #38c8ff;
+  --acc-violet: #a78bfa;
+  --acc-amber: #ffb224;
+  --acc-rose: #ff5d7e;
+
+  --danger: #ff5b5b;
+  --warn: #ffc24b;
+  --ok: #2fe38b;
+  --private: #b78bff;
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 18px;
+
+  --font: "Inter", system-ui, -apple-system, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --ease: cubic-bezier(.22,.9,.28,1);
+  --dur: .18s;
+}
+
+/* ── Midnight (default) ─────────────────────────────── */
+.window[data-theme="midnight"] {
+  --bg-0: #04060a;
+  --bg-1: #090d14;
+  --bg-2: #0e141d;
+  --bg-3: #141c29;
+  --bg-4: #1a2433;
+  --line: rgba(148, 180, 255, .09);
+  --line-2: rgba(148, 180, 255, .16);
+  --txt: #e9eff8;
+  --txt-2: #97a3b6;
+  --txt-3: #5c6879;
+  --glass: rgba(10, 14, 21, .82);
+  --glow: rgba(0, 229, 160, .16);
+}
+
+/* ── Abyss — deep ocean blue ────────────────────────── */
+.window[data-theme="abyss"] {
+  --bg-0: #020508;
+  --bg-1: #050a12;
+  --bg-2: #081020;
+  --bg-3: #0c1830;
+  --bg-4: #12203c;
+  --line: rgba(120, 170, 255, .10);
+  --line-2: rgba(120, 170, 255, .18);
+  --txt: #e6eefc;
+  --txt-2: #8fa4c8;
+  --txt-3: #4f608a;
+  --glass: rgba(5, 10, 18, .85);
+  --glow: rgba(56, 200, 255, .15);
+}
+
+/* ── Ember — warm charcoal ──────────────────────────── */
+.window[data-theme="ember"] {
+  --bg-0: #090503;
+  --bg-1: #0f0906;
+  --bg-2: #160d08;
+  --bg-3: #1f1309;
+  --bg-4: #2a1a0d;
+  --line: rgba(255, 190, 120, .10);
+  --line-2: rgba(255, 190, 120, .18);
+  --txt: #f6ede4;
+  --txt-2: #b3a191;
+  --txt-3: #715f4e;
+  --glass: rgba(15, 9, 6, .85);
+  --glow: rgba(255, 178, 36, .14);
+}
+
+/* ── Ash — graphite mono ────────────────────────────── */
+.window[data-theme="ash"] {
+  --bg-0: #070708;
+  --bg-1: #0c0c0e;
+  --bg-2: #121215;
+  --bg-3: #18181d;
+  --bg-4: #202027;
+  --line: rgba(255, 255, 255, .08);
+  --line-2: rgba(255, 255, 255, .15);
+  --txt: #edeef2;
+  --txt-2: #a0a3ad;
+  --txt-3: #62656f;
+  --glass: rgba(12, 12, 15, .86);
+  --glow: rgba(237, 238, 242, .08);
+}
+
+/* accent wiring */
+.window[data-accent="green"]  { --accent: var(--acc-green);  --accent-rgb: 0 229 160;  --accent-ink: #03130c; }
+.window[data-accent="cyan"]   { --accent: var(--acc-cyan);   --accent-rgb: 56 200 255;  --accent-ink: #031019; }
+.window[data-accent="violet"] { --accent: var(--acc-violet); --accent-rgb: 167 139 250; --accent-ink: #130a24; }
+.window[data-accent="amber"]  { --accent: var(--acc-amber);  --accent-rgb: 255 178 36;  --accent-ink: #180f02; }
+.window[data-accent="rose"]   { --accent: var(--acc-rose);   --accent-rgb: 255 93 126;  --accent-ink: #1c060c; }
+
+.window {
+  --accent-soft: rgb(var(--accent-rgb) / .14);
+  --accent-softer: rgb(var(--accent-rgb) / .08);
+  --accent-line: rgb(var(--accent-rgb) / .35);
+}

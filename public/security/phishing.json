@@ -1,0 +1,15 @@
+{
+  "name": "663Nation Safe Browsing — phishing feed",
+  "version": 11,
+  "updated": "2026-01-28",
+  "entries": [
+    { "host": "free-giveaway-663.example", "brand": "663Nation demo", "reason": "Demo entry — proves the phishing interstitial works." },
+    { "host": "login-secure-paypal.example", "brand": "PayPal", "reason": "Credential harvesting clone." },
+    { "host": "wallet-verify-crypto.example", "brand": "MetaMask", "reason": "Seed-phrase theft." },
+    { "host": "appleid-unlock.example", "brand": "Apple", "reason": "Fake account unlock flow." },
+    { "host": "microsoft-support-fix.example", "brand": "Microsoft", "reason": "Tech-support scam." },
+    { "host": "bankofamerica-verify.example", "brand": "Bank of America", "reason": "Credential harvesting clone." },
+    { "host": "steam-gift-free.example", "brand": "Steam", "reason": "Gift-card lure." },
+    { "host": "metamask-airdrop.example", "brand": "MetaMask", "reason": "Fake token airdrop." }
+  ]
+}

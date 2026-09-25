@@ -1,0 +1,28 @@
+{
+  "name": "663Nation Anti-Miner — blocklist",
+  "version": 5,
+  "updated": "2026-02-02",
+  "entries": [
+    { "domain": "coinhive.com", "note": "in-browser Monero miner" },
+    { "domain": "coin-hive.com", "note": "coinhive mirror" },
+    { "domain": "authedmine.com", "note": "opt-in miner API abused by injectors" },
+    { "domain": "jsecoin.com", "note": "web miner SDK" },
+    { "domain": "crypto-loot.com", "note": "cryptojacking toolkit" },
+    { "domain": "cryptoloot.pro", "note": "cryptojacking toolkit mirror" },
+    { "domain": "coinimp.com", "note": "miner SDK" },
+    { "domain": "minero.cc", "note": "web miner pool" },
+    { "domain": "webmine.cz", "note": "miner scripts CDN" },
+    { "domain": "ppoi.org", "note": "project poison ivy miner" },
+    { "domain": "coinnebula.com", "note": "hidden miner iframe host" },
+    { "domain": "hashing.win", "note": "drive-by miner pool" },
+    { "domain": "monerominer.rocks", "note": "Monero pool miner" },
+    { "domain": "xmrpool.net", "note": "XMR mining pool scripts" },
+    { "domain": "minergate.com", "note": "web miner gateway" },
+    { "domain": "cryptonight.wasm", "note": "WASM miner payload host" },
+    { "domain": "cn.wasm", "note": "WASM miner payload host (short)" }
+  ],
+  "filePatterns": [
+    "*cryptonight*", "*coinhive*", "*/miner.js", "*/miner.min.js", "*cn.wasm",
+    "*jsecoin*", "*webminer*", "*deepminer*", "*monerominer*", "*xmrig*"
+  ]
+}

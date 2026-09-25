@@ -1,0 +1,16 @@
+/* 663Nation base reset — bespoke design system lives in browser/styles */
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: #05070b;
+  color: #e8eef7;
+  overflow: hidden;
+  user-select: none;
+}
+img { -webkit-user-drag: none; }
+button { font-family: inherit; }
+i[class^="ri-"], i[class*=" ri-"] { font-style: normal; }
